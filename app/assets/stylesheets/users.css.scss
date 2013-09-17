@@ -10,50 +10,27 @@
 	font-size: small;
 }
 
-.container {
+.users_container {
   width: 600px;
   padding:0;
   display: table;
   border: 1px solid black;
 }
 
-.row  {
+.users_row  {
   display: table-row;
 }
 
-.cell {
+.users_cell {
   padding: 10px;
   width:150px;
   display: table-cell;
   border-right: 1px solid black;
 }
 
-.cell_end {
+.users_cell_end {
   padding: 10px;
   width: 150px;
   display: table-cell;
 }
 
-/* todo: delete these, was just using them for proof of concept */
-.left {
-  padding: 10px;
-  width:150px;
-  background: red;
-  display: table-cell;
-  border-right: 1px solid black;
-}
-
-.right {
-  padding: 10px;
-  width:150px;
-  background: blue;
-  display: table-cell;
-  }
-
-.middle {
-  padding: 10px;
-  width: 280px;
-  background: yellow;
-  display: table-cell;
-  border-right: 1px solid black;
-}
