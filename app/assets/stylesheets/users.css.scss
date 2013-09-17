@@ -1,0 +1,59 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.list_header {
+	font-weight: bold
+}
+
+.action_links {
+	font-size: small;
+}
+
+.container {
+  width: 600px;
+  padding:0;
+  display: table;
+  border: 1px solid black;
+}
+
+.row  {
+  display: table-row;
+}
+
+.cell {
+  padding: 10px;
+  width:150px;
+  display: table-cell;
+  border-right: 1px solid black;
+}
+
+.cell_end {
+  padding: 10px;
+  width: 150px;
+  display: table-cell;
+}
+
+/* todo: delete these, was just using them for proof of concept */
+.left {
+  padding: 10px;
+  width:150px;
+  background: red;
+  display: table-cell;
+  border-right: 1px solid black;
+}
+
+.right {
+  padding: 10px;
+  width:150px;
+  background: blue;
+  display: table-cell;
+  }
+
+.middle {
+  padding: 10px;
+  width: 280px;
+  background: yellow;
+  display: table-cell;
+  border-right: 1px solid black;
+}

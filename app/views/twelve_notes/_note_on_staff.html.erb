@@ -1,0 +1,2 @@
+<% note_escape = escape_note_name(note_on_staff) #note_on_staff.downcase.gsub('#', '_sh') %>
+<%= image_tag("notes/#{note_escape}.gif", class: "note_img", alt: note_on_staff, id: "note-#{note_escape}") %>

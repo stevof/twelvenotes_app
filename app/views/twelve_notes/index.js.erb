@@ -1,0 +1,28 @@
+console.log('running index.js.erb');
+
+jQuery.fn.slideDelay = function() {
+	delay = 0;
+	return this.each(function() {
+		$(this).delay(delay).slideDown(300);
+		// $(this).stop().delay(delay).show().animate({ left: "+=400" }, 1200) 
+		delay += 80;
+	});
+};
+
+jQuery.fn.fadeDelay = function() {
+	delay = 0;
+	return this.each(function() {
+		$(this).delay(delay).fadeIn(300);
+		// $(this).stop().delay(delay).show().animate({ left: "+=400" }, 1200) 
+		delay += 80;
+	});
+};
+
+$('#note_names').html('<p><%= j render partial: "note", collection: @notes %></p>');
+$('#notes_on_staff').html('<%= image_tag("notes/treb.gif", alt: 'Treble Clef') %><%= j render partial: "note_on_staff", collection: @notes %>');
+
+$('#note_names span').hide();
+$('#notes_on_staff .note_img').hide();
+
+$('#note_names span').fadeDelay();
+$('#notes_on_staff .note_img').slideDelay();

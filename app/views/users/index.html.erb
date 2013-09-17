@@ -1,0 +1,52 @@
+<h1>Users</h1>
+
+<div id="users_container" class="container">
+  <div id="users_header" class="row list_header">
+    <div class="cell">First Name</div>
+    <div class="cell">Last Name</div>
+    <div class="cell_end">User Name</div>
+  </div>
+
+<% @users.each do |user| %>
+  <%= render user %>
+<% end %>
+</div>
+
+<div id="new_user">
+  <h2>New User</h2>
+
+  <%= form_for @user, remote: true do |f| %>
+    <p>
+      <%= f.label :first_name %><br>
+      <%= f.text_field :first_name %>
+    </p>
+   
+    <p>
+      <%= f.label :last_name %><br>
+      <%= f.text_field :last_name %>
+    </p>
+   
+    <p>
+      <%= f.label :user_name %><br>
+      <%= f.text_field :user_name %>
+    </p>
+   
+    <p>
+      <%= f.submit %>
+    </p>
+  <% end %>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="left">
+      this is the left
+    </div>
+    <div class="middle">
+      this is the middle
+    </div>
+    <div class="right">
+      this is the right
+    </div>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+<div class="title">
+	<h1>Get Your 12 Notes Here!</h1>
+</div>
+<div class="spacer1"></div>
+<div id="notes" class="notes_container">
+	<div id="note_names">
+		<%= render partial: "note", collection: @notes %>
+	</div>
+	<div id="notes_on_staff">
+		<%= image_tag("notes/treb.gif", alt: 'Treble Clef') %><%= render partial: "note_on_staff", collection: @notes %>
+	</div>
+</div>
+<div class="spacer1"></div>
+<div class="instructions">
+	<p>Get some new notes 
+		<%= link_to "with FLATS", twelve_notes_path(type: "flats"), remote: true %> or
+		<%= link_to "with SHARPS", twelve_notes_path(type: "sharps"), remote: true %>
+	</p>
+</div>
+<div id="info">
+	<div id="usage">
+		<a id="usage_link" href="#"><span id="usage_expand">[+]</span> What Can I Do With This Exercise?</a>
+		<div id="usage_text" class="info_text">
+			The 12 note exercise can be used in many ways. Starting with a list of 12 random notes on this page, here are some suggestions:
+			<ul>
+				<li>Play all the notes on one string of the guitar, staying between the 1st and 12th frets. Repeat for each string.</li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			Some more general tips:
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<div id="rules">
+		<a id="rules_link" href="#"><span id="rules_expand">[+]</span> How Does This Work?</a>
+		<div id="rules_text" class="info_text">
+			Western music has 12 notes in an octave. As you move up or down in pitch, each adjacent note is separated by a semitone, aka a half step. For this exercise we select the 12 notes in random order, using either all sharps or all flats for the accidentals. Adjacent notes must be more than a half step apart.
+		</div>
+	</div>
+</div>
+<%= javascript_include_tag params[:controller] %>

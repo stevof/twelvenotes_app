@@ -1,0 +1,25 @@
+	console.log('in twelve_notes.js.erb');
+
+	$('#info .info_text').toggle();
+
+	function toggleText(ev, name) {
+		// console.log(name);
+		
+		ev.preventDefault();
+		
+		$textEl = $('#' + name + '_text')
+		// console.log($textEl)
+
+	  $textEl.toggle(); 
+
+	  $expandEl = $('#' + name + '_expand');
+	  $expandEl.text(($expandEl.text() == '[+]') ? '[-]' : '[+]');		
+	}
+
+	$('#rules_link').click(function(ev) { 
+		toggleText(ev, 'rules');
+	});
+
+	$('#usage_link').click(function(ev) { 
+		toggleText(ev, 'usage');
+	});
