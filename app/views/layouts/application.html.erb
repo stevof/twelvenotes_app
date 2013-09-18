@@ -19,81 +19,24 @@
 <body>
 <div id="header-wrapper">
 	<div id="header" class="container">
-		<%= render 'shared/menu' %>
 		<div id="logo">
-			<h1><a href="#">Twelve Notes</a></h1>
-			<span>A web site dedicated to musicians -- practice exercises, education, sharing <a href="#" rel="nofollow">TwelveNotes.net</a></span> </div>
+			<h1><%= link_to "Twelve Notes", root_path %></h1>
+			<span>A web site dedicated to musicians. Practice exercises, education, sharing. <%= link_to "Twelve-Notes.net", root_path %></span>
+		</div>
+		<%= render 'shared/menu' %>
 	</div>
 </div>
-<div id="wrapper1">
-	<div id="welcome" class="container">
+<div id="divider-top" class="section-divider"></div>
+<div id="wrapper3">
+	<div id="section-white" class="container">
 		<div class="title">
 			<h2>Welcome to our website</h2>
 			<span class="byline">Mauris vulputate dolor sit amet nibh</span> </div>
 		<div class="content">
-			<p>This is <strong>Adequately</strong>, a free, fully standards-compliant CSS template designed by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>. The photos in this template are from <a href="http://fotogrph.com/"> Fotogrph</a>. This free template is released under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attributions 3.0</a> license, so you are pretty much free to do whatever you want with it (even use it commercially) provided you keep the links in the footer intact. Aside from that, have fun with it :) </p>
-			<a href="#" class="button">Etiam posuere</a> 
+			<p>This is static content in the template. Next comes the dynamic content from the view...</p>
 
 <%= yield %>
 
-		</div>
-	</div>
-</div>
-<div id="wrapper3">
-	<div id="portfolio" class="container">
-		<div class="title">
-			<h2>Design Portfolio</h2>
-			<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span> </div>
-		<div class="column1">
-			<div class="box"> <a href="#"><%= image_tag "scr01.jpg", alt: "", class: "image image-full" %></a>
-				<h3>Vestibulum venenatis</h3>
-				<p>Fermentum nibh augue praesent a lacus at urna congue rutrum.</p>
-				<a href="#" class="button button-small">Etiam posuere</a> </div>
-		</div>
-		<div class="column2">
-			<div class="box"> <a href="#"><%= image_tag "scr02.jpg", alt: "", class: "image image-full" %></a>
-				<h3>Praesent scelerisque</h3>
-				<p>Vivamus fermentum nibh in augue praesent urna congue rutrum.</p>
-				<a href="#" class="button button-small">Etiam posuere</a> </div>
-		</div>
-		<div class="column3">
-			<div class="box"> <a href="#"><%= image_tag "scr03.jpg", alt: "", class: "image image-full" %></a>
-				<h3>Donec dictum metus</h3>
-				<p>Vivamus fermentum nibh in augue praesent urna congue rutrum.</p>
-				<a href="#" class="button button-small">Etiam posuere</a> </div>
-		</div>
-		<div class="column4">
-			<div class="box"> <a href="#"><%= image_tag "scr04.jpg", alt: "", class: "image image-full" %></a>
-				<h3>Mauris vulputate dolor</h3>
-				<p>Rutrum fermentum nibh in augue praesent urna congue rutrum.</p>
-				<a href="#" class="button button-small">Etiam posuere</a> </div>
-		</div>
-	</div>
-</div>
-<div id="wrapper2">
-	<div id="newsletter" class="container">
-		<div class="title">
-			<h2>Newsletter Signup</h2>
-			<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span> </div>
-		<div class="content">
-			<form method="post" action="#">
-				<div class="row half">
-					<div class="6u">
-						<input type="text" class="text" name="name" placeholder="Name" />
-					</div>
-					<div class="6u">
-						<input type="text" class="text" name="email" placeholder="Email" />
-					</div>
-				</div>
-				<div class="row half">
-					<div class="12u">
-						<textarea name="message" placeholder="Message"></textarea>
-					</div>
-				</div>
-				<div class="row">
-					<div class="12u"> <a href="#" class="button submit">Send Message</a> </div>
-				</div>
-			</form>
 		</div>
 	</div>
 </div>
@@ -114,7 +57,40 @@
 	</div>
 </div>
 <div id="copyright">
-	<p>Copyright (c) 2013 Sitename.com. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>.</p>
+	<p>Copyright (c) Twelve-Notes.net. All rights reserved. | Design by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>.</p>
 </div>
+
+<% if false %>
+<div id="misc">
+
+	<p>other stuff that i will probably delete or use in other templates...</p>
+
+	<div id="wrapper2">
+		<div id="newsletter" class="container">
+			<div class="title">
+				<h2>Newsletter Signup</h2>
+				<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+			</div>
+			<div class="content">
+				<p>Static content from the template.</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="wrapper3-123">
+		<div id="portfolio" class="container">
+			<div class="title">
+				<h2>Design Portfolio</h2>
+				<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+			</div>
+			<div class="content">
+				<p>Static content from the template.</p>
+			</div>
+		</div>
+	</div>
+
+</div>
+<% end %>
+
 </body>
 </html>

@@ -1,9 +1,10 @@
 		<div id="menu">
 			<ul>
-				<li class="<%= is_active?('welcome') %>"><%= link_to "Home", root_path, accesskey: "1", title: "Home" %></li>
+				<li class="<%= is_active?('home') %>"><%= link_to "Home", root_path, accesskey: "1", title: "Home" %></li>
 				<li class="<%= is_active?('twelve_notes') %>"><%= link_to "Exercises", twelve_notes_path, accesskey: "2", title: "Exercises" %></li>
 				<li><a href="#" accesskey="3" title="">Links</a></li>
-				<li><a href="#" accesskey="4" title="">About</a></li>
+				<!--<li><a href="#" accesskey="4" title="">About</a></li>-->
+				<li class="<%= is_active?('about') %>"><%= link_to "About", about_path, accesskey: "4", title: "About" %></li>
 				<li><a href="#" accesskey="5" title="">Contact</a></li>
 			</ul>
 		</div>

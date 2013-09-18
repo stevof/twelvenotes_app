@@ -30,6 +30,6 @@ module ApplicationHelper
     puts params.inspect
     puts
 
-    active_class_name if params[:controller] == page_name
+    active_class_name if [params[:controller], params[:action]].include?(page_name)
   end  
 end

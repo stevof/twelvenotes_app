@@ -229,7 +229,7 @@
 	ul.contact
 	{
 		margin: 0;
-		padding: 2em 0em 0em 0em;
+		padding: 0.5em 0em 0em 0em;
 		list-style: none;
 	}
 	
@@ -338,7 +338,7 @@
 	#header-wrapper
 	{
 		overflow: hidden;
-		padding: 5em 0em;
+		padding: 0em 0em;
 		background: #8DCB89;
 	}
 
@@ -352,7 +352,7 @@
 
 	#logo
 	{
-		padding: 5em 0em;
+		padding: 0.5em 0em;
 		text-align: center;
 	}
 	
@@ -372,7 +372,7 @@
 		letter-spacing: 0.10em;
 		text-transform: uppercase;
 		font-size: 0.90em;
-		color: rgba(255,255,255,0.5);
+		color: rgba(255,255,255,0.8);
 	}
 
 	#logo span a
@@ -451,14 +451,14 @@
 	#wrapper3
 	{
 		overflow: hidden;
-		padding: 8em 0em;
+		padding: 2em 0em;
 		background: #FFF;
 	}
 	
 	#wrapper4
 	{
 		overflow: hidden;
-		padding: 8em 0em;
+		padding: 2em 0em;
 		background: #E74E59;
 	}
 
@@ -477,9 +477,7 @@
 	#welcome .content
 	{
 		padding: 0em 8em;
-	}
-	
-	
+	}	
 	
 	#welcome a,
 	#welcome strong
@@ -533,7 +531,7 @@
 	#copyright
 	{
 		overflow: hidden;
-		padding: 5em 0em;
+		padding: 1em 0em;
 		border-top: 1px solid rgba(255,255,255,0.08);
 	}
 	
@@ -628,4 +626,44 @@
 	{
 		float: right;
 	}
+
+/*********************************************************************************/
+/* section-white                                                                 */
+/*********************************************************************************/
+
+	#section-white
+	{
+		overflow: hidden;
+		padding: 2em 0em;
+		text-align: center;
+		color: rgba(0,0,0,0.6);
+	}
 	
+	#section-white .title
+	{
+		text-align: center;
+	}
+
+	#section-white .title h2
+	{
+		color: rgba(0,0,0,0.8);
+	}
+
+	#section-white .content
+	{
+		padding: 0em 8em;
+	}	
+	
+	#section-white a,
+	#section-white strong
+	{
+		color: rgba(0,0,0,0.7);
+	}
+
+/**********************/
+
+	.section-divider
+	{
+		padding: 0.5em 0em;
+		background: rgba(128, 128, 128, 1);
+	}
