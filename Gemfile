@@ -8,11 +8,6 @@ gem 'rails', '4.0.0'
 group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
-
-	# Required by Heroku: enables your Rails server to deliver your assets instead of returning a 404.
-	# By default Rails 4 will return a 404 if an asset is not handled via an external proxy such as Nginx.
-	# See https://devcenter.heroku.com/articles/ruby-support#static-assets
-  gem 'rails_serve_static_assets' 
 end
 
 group :development, :test do
