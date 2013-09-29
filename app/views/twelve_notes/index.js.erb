@@ -19,7 +19,7 @@ jQuery.fn.fadeDelay = function() {
 };
 
 $('#note_names').html('<p><%= j render partial: "note", collection: @notes %></p>');
-$('#notes_on_staff').html('<%= image_tag("notes/treb.gif", alt: 'Treble Clef') %><%= j render partial: "note_on_staff", collection: @notes %>');
+$('#notes_on_staff').html('<%= image_tag("notes/treb.gif", alt: "Treble Clef", height: "120") %><%= j render partial: "note_on_staff", collection: @notes %>');
 
 $('#note_names span').hide();
 $('#notes_on_staff .note_img').hide();

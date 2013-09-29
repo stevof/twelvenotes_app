@@ -1,10 +1,10 @@
 TwelvenotesApp::Application.routes.draw do
   
-
-  # get "static_pages/home"
-  # get "static_pages/about"
   match '/', to: 'static_pages#home', via: 'get'  
+  match '/exercises', to: 'static_pages#exercises', via: 'get'
   match '/about', to: 'static_pages#about', via: 'get'
+  match '/contact', to: 'static_pages#contact', via: 'get'
+  match '/links', to: 'static_pages#links', via: 'get'
 
   resources :users
 

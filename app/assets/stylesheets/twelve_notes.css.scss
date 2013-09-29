@@ -2,6 +2,51 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.notes_container {
+.spacer1
+{
+	height: 20px;
+}
+
+.notes_container 
+{
+	width: 500px;
 	height: 150px;
+  position: relative;
+  left: 50%;
+  margin-left:-250px;
+}
+
+div #info
+{
+  div
+  {
+		margin-top: 0.5em;
+	}
+}
+
+.info_text
+{
+	width: 700px;
+  position: relative;
+  left: 50%;
+  margin-left:-350px;
+	font-size: 0.9em;
+	text-align: left;
+	background-color: #BBE0B8;
+	padding: 15px;
+	border: 1px solid #A6A6A6;
+	border-radius: 8px;
+
+	ul
+	{
+		list-style: disc;
+		list-style-position: inside;
+		padding-left: 2em;
+		text-indent: -1em;
+
+		li 
+		{
+			margin-top: 0.5em;
+		}
+	}
 }

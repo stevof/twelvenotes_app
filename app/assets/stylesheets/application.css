@@ -68,7 +68,7 @@
 	.container
 	{
 		margin: 0px auto;
-		width: 1200px;
+		/*width: 1200px;*/
 	}
 	
 
@@ -516,6 +516,7 @@
 	#footer
 	{
 		text-align: center;
+		color: rgba(255,255,255,0.8);
 	}
 
 	
